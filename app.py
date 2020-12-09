@@ -11,7 +11,7 @@ api = Api(app)
 app.secret_key = "rkg"
 jwt = JWT(app,authenticate,identity)
 
-#DB.create_Table()
+DB.create_Table()
 
 
 api.add_resource(User,"/user")
