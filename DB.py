@@ -5,7 +5,8 @@ import sqlite3
 
 
 def create_Table():
-    db = sqlite3.connect("book.db")
+    db = sqlite3.connect("postgres://jvcloxdykhdrkz:6905f4a01a36158bde1579aaf6537bed6ec635dcb0ea28ba27324987388b14f4@ec2-54-243-67-199.compute-1.amazonaws.com:5432/dafdms6cep8kta
+                         ")
     cursor = db.cursor()
     createUserTable = "CREATE TABLE IF NOT EXISTS users(id Integer,username Text,password Text,email Text,Phone Integer)"
     cursor.execute(createUserTable)

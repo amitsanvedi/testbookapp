@@ -10,7 +10,7 @@ import DB
 app = Flask(__name__)
 api = Api(app)
 app.secret_key = "rkg"
-app.config['DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///book.db')
+#app.config['DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///book.db')
 
 jwt = JWT(app,authenticate,identity)
 
