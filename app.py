@@ -4,6 +4,7 @@ from flask_jwt import JWT,jwt_required
 from security import authenticate,identity
 from resources.book import Book
 from resources.user import User
+import os
 import DB
 
 app = Flask(__name__)
